@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065F255A2594A5F2002A94F5 /* RPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F25582594A5F2002A94F5 /* RPCollectionViewCell.swift */; };
+		065F255B2594A5F2002A94F5 /* RPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065F25592594A5F2002A94F5 /* RPCollectionViewCell.xib */; };
 		06A711D825931773006AD204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A711D725931773006AD204 /* AppDelegate.swift */; };
 		06A711DA25931773006AD204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A711D925931773006AD204 /* SceneDelegate.swift */; };
 		06A711DC25931773006AD204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A711DB25931773006AD204 /* ViewController.swift */; };
 		06A711DF25931773006AD204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A711DD25931773006AD204 /* Main.storyboard */; };
 		06A711E12593177F006AD204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A711E02593177F006AD204 /* Assets.xcassets */; };
 		06A711E42593177F006AD204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A711E22593177F006AD204 /* LaunchScreen.storyboard */; };
+		06A711EC259317C6006AD204 /* DataFromServerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A711EB259317C6006AD204 /* DataFromServerStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065F25582594A5F2002A94F5 /* RPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCollectionViewCell.swift; sourceTree = "<group>"; };
+		065F25592594A5F2002A94F5 /* RPCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPCollectionViewCell.xib; sourceTree = "<group>"; };
 		06A711D425931773006AD204 /* ECommersTaskMD3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommersTaskMD3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A711D725931773006AD204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A711D925931773006AD204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		06A711E02593177F006AD204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A711E32593177F006AD204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A711E52593177F006AD204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A711EB259317C6006AD204 /* DataFromServerStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFromServerStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061D10232594E23900683B84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06A711DB25931773006AD204 /* ViewController.swift */,
+				065F25582594A5F2002A94F5 /* RPCollectionViewCell.swift */,
+				065F25592594A5F2002A94F5 /* RPCollectionViewCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		061D10242594E24300683B84 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				06A711EB259317C6006AD204 /* DataFromServerStruct.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		061D10252594E24F00683B84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06A711DD25931773006AD204 /* Main.storyboard */,
+				06A711E22593177F006AD204 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		06A711CB25931773006AD204 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +91,10 @@
 			children = (
 				06A711D725931773006AD204 /* AppDelegate.swift */,
 				06A711D925931773006AD204 /* SceneDelegate.swift */,
-				06A711DB25931773006AD204 /* ViewController.swift */,
-				06A711DD25931773006AD204 /* Main.storyboard */,
+				061D10242594E24300683B84 /* Modal */,
+				061D10252594E24F00683B84 /* View */,
+				061D10232594E23900683B84 /* Controller */,
 				06A711E02593177F006AD204 /* Assets.xcassets */,
-				06A711E22593177F006AD204 /* LaunchScreen.storyboard */,
 				06A711E52593177F006AD204 /* Info.plist */,
 			);
 			path = ECommersTaskMD3;
@@ -127,6 +160,7 @@
 			files = (
 				06A711E42593177F006AD204 /* LaunchScreen.storyboard in Resources */,
 				06A711E12593177F006AD204 /* Assets.xcassets in Resources */,
+				065F255B2594A5F2002A94F5 /* RPCollectionViewCell.xib in Resources */,
 				06A711DF25931773006AD204 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +174,9 @@
 			files = (
 				06A711DC25931773006AD204 /* ViewController.swift in Sources */,
 				06A711D825931773006AD204 /* AppDelegate.swift in Sources */,
+				065F255A2594A5F2002A94F5 /* RPCollectionViewCell.swift in Sources */,
 				06A711DA25931773006AD204 /* SceneDelegate.swift in Sources */,
+				06A711EC259317C6006AD204 /* DataFromServerStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
